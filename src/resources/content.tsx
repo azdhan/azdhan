@@ -35,6 +35,12 @@ const social: Social = [
     link: "mailto:azdhan.thescribe@gmail.com",
     essential: true,
   },
+  {
+    name: "Substack",
+    icon: "substack",
+    link: "https://azdhan.substack.com",
+    essential: true,
+  },
 ];
 
 /* ================= NEWSLETTER ================= */
