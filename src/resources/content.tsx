@@ -8,7 +8,7 @@ const person: Person = {
   lastName: "",
   name: "Azdhan",
   role: "Tech Journalist (Technology & Public Policy)",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/avatar.webp",
   email: "azdhan.thescribe@gmail.com",
   location: "Asia/Kolkata",
   languages: ["English", "Hindi", "Telugu"],
