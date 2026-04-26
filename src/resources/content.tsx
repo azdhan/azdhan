@@ -69,7 +69,7 @@ const home: Home = {
   },
   subline: (
     <>
-      Journalists are thinkers by training and end up generalists in practice. We learn fast, we know where to look, and we synthesize across domains to translate complexity into clarity. The journalistic foundation coupled with AI is a different kind of leverage: now I can build what I once analyse to write. This site is not a blog, it's a portfolio of the apps and tools that I kepp building. If you are curious about my blogs, visit my Substack.
+      Journalists are thinkers by training and end up generalists in practice. We learn fast, we know where to look, and we synthesize across domains to translate complexity into clarity. The journalistic foundation coupled with AI is a different kind of leverage: now I can build what I once analyse to write. This site is not a blog, it's a portfolio of the apps and tools that I keep building. If you are curious about my blogs, visit my Substack.
     </>
   ),
 };
