@@ -1,0 +1,171 @@
+---
+title: "Yapp Forever"
+summary: "A voice-first system to capture thoughts and turn them into structured notes automatically"
+publishedAt: "2026-04-26"
+tag: "Voice / AI"
+---
+
+## What is Yapp Forever?
+
+Yapp Forever is a background voice-capture system.
+
+You press a hotkey, speak your thoughts, and at the end of the day everything is:
+- transcribed
+- cleaned
+- structured into readable notes
+
+The goal is simple: remove friction between thinking and recording.
+
+Typing kills flow. This doesn’t.
+
+---
+
+## Why I built it
+
+Most thoughts don’t survive long enough to be written down.
+
+Especially when:
+- you’re reading
+- watching something
+- walking
+- or just thinking
+
+This tool exists to:
+- capture thoughts instantly
+- preserve them without effort
+- turn them into something usable later
+
+---
+
+## How it works
+
+The system runs in the background and follows a simple pipeline:
+
+1. You press a hotkey and speak  
+2. Audio is recorded throughout the day  
+3. At night:
+   - transcription happens (via Groq / Whisper)
+   - cleanup + structuring happens (via Claude)
+4. Output is saved as clean markdown notes
+
+---
+
+## Core idea: “New Session”
+
+The most important concept in the system:
+
+You can segment your thoughts by saying:
+
+> “New session — [topic]”
+
+Example:
+
+- “New session — Lex Fridman podcast”
+- “Next session — AI regulation article”
+
+This creates structured sections in your final notes instead of one messy blob.
+
+---
+
+## Daily workflow
+
+Typical usage looks like this:
+
+**During the day**
+- Press hotkey → speak → pause  
+- Repeat whenever needed  
+- Use session markers to separate topics  
+
+**At night**
+- System processes everything automatically  
+
+**Next morning**
+- Clean notes are ready  
+
+---
+
+## What you get as output
+
+Each day produces a markdown file with:
+
+### 1. Cleaned notes
+- filler words removed  
+- grammar fixed  
+- structure added  
+- your voice preserved  
+
+### 2. Flags section
+- shows what AI changed  
+- marks major vs minor edits  
+- keeps everything transparent  
+
+---
+
+## Stack behind it
+
+- **Groq (Whisper)** → transcription  
+- **Claude (Anthropic)** → cleanup + structuring  
+- **Gemini** → fallback  
+- **Markdown files** → storage  
+- **Obsidian (optional)** → reading + querying  
+
+---
+
+## Why this is useful
+
+This becomes a **second brain of raw thinking**.
+
+Over time you build:
+- searchable ideas  
+- captured reactions  
+- structured observations  
+
+You can later:
+- query your notes  
+- extract insights  
+- build articles or reports  
+
+---
+
+## Practical use cases
+
+- Journalists capturing reactions while reading  
+- Researchers tracking thoughts across sources  
+- Writers building idea banks  
+- Anyone who thinks faster than they type  
+
+---
+
+## Limitations
+
+- Windows-only  
+- Requires API setup (one-time)  
+- Needs internet for processing  
+- Not a real-time note editor  
+
+---
+
+## Key insight
+
+This is not a note-taking app.
+
+It’s a **thought capture system**.
+
+That distinction matters.
+
+---
+
+## Status
+
+Working prototype.  
+Actively used in daily workflow.
+
+---
+
+## Final note
+
+Most people don’t have a thinking problem.
+
+They have a **capture problem**.
+
+This tool solves that.

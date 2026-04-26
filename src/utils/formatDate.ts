@@ -1,16 +1,33 @@
-export function formatDate(date: string, includeRelative = false) {
+export function formatDate(date: unknown, includeRelative = false) {
   const currentDate = new Date();
 
-  if (!date.includes("T")) {
-    date = `${date}T00:00:00`;
+  let targetDate: Date;
+
+  // Case 1: already a valid Date
+  if (date instanceof Date && !isNaN(date.getTime())) {
+    targetDate = date;
   }
 
-  const targetDate = new Date(date);
+  // Case 2: string → try parsing
+  else if (typeof date === "string") {
+    const normalized = date.includes("T") ? date : `${date}T00:00:00`;
+    targetDate = new Date(normalized);
+  }
+
+  // Case 3: fallback (invalid / undefined / weird type)
+  else {
+    targetDate = new Date();
+  }
+
+  // If parsing failed → fallback
+  if (isNaN(targetDate.getTime())) {
+    targetDate = new Date();
+  }
+
   const timeDifference = currentDate.getTime() - targetDate.getTime();
   const daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
   const hoursAgo = Math.floor(timeDifference / (1000 * 60 * 60));
   const minutesAgo = Math.floor(timeDifference / (1000 * 60));
-  const secondsAgo = Math.floor(timeDifference / 1000);
 
   let formattedDate = "";
 
