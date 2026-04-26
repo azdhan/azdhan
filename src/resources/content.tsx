@@ -7,7 +7,7 @@ const person: Person = {
   firstName: "Azdhan",
   lastName: "",
   name: "Azdhan",
-  role: "Tech Journalist (Technology & Public Policy)",
+  role: "Tech Journalist with public policy lens",
   avatar: "/images/avatar.webp",
   email: "azdhan.thescribe@gmail.com",
   location: "Asia/Kolkata",
@@ -53,7 +53,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name} – Portfolio`,
   description: `Tech journalism, public policy analysis, and editorial work by ${person.name}`,
-  headline: <>Tech, policy, and the systems shaping digital society</>,
+  headline: <>From writing on tech (and policy) to building tech, with AI</>,
   featured: {
     display: false,
     title: (
@@ -69,8 +69,7 @@ const home: Home = {
   },
   subline: (
     <>
-      I report on technology and public policy, focusing on platform governance, AI, and digital regulation. 
-      My work translates complex regulatory systems into clear, structured analysis.
+      Journalists are thinkers by training and end up generalists in practice. We learn fast, we know where to look, and we synthesize across domains to translate complexity into clarity. The journalistic foundation coupled with AI is a different kind of leverage: now I can build what I once analyse to write. This site is not a blog, it's a portfolio of the apps and tools that I kepp building. If you are curious about my blogs, visit my Substack.
     </>
   ),
 };
@@ -81,7 +80,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Tech journalist covering policy, platforms, and digital systems`,
+  description: `From writing on tech (and policy) to building tech, with AI`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -98,9 +97,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        I am a tech journalist focused on technology policy, platform governance, and media systems in India. 
-        My work involves breaking down regulatory complexity into structured, accessible reporting, with a 
-        focus on AI, OTT regulation, and digital platforms.
+        I've spent the last few years reporting and writing on the systems that govern digital life in India, from who controls platforms, to how Indian law makers are responding to AI, and how governments use those same systems for online censorship and to suppress free speech. Journalism trained me to move fast across unfamiliar terrain, synthesize and distill what matters, and raise questions that may not have easy answers.
+        
+        Now I'm pairing that with AI to build things: tools, products, experiments. The medium has changed, but the journalistic instinct is the same: trying to understand complex systems and build something useful with that understanding.
       </>
     ),
   },
