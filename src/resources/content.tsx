@@ -211,26 +211,32 @@ const about: About = {
     title: "Core Skills",
     skills: [
       {
+        title: "Building Apps with AI",
+        description: <>Prompt engineering, AI workflow design, process automation, Chrome extension development and Python scripting, HTML, CSS.</>,
+        tags: [{ name: "AI", icon: "cpu" }],
+        images: [],
+      },
+      {
         title: "Writing & Research",
-        description: <>Technical writing, explanatory journalism, policy research, structured reporting.</>,
+        description: <>Technical writing, explanatory journalism, policy research, structured reporting, editorial synthesis.</>,
         tags: [{ name: "Writing", icon: "edit" }],
         images: [],
       },
       {
         title: "Editing",
-        description: <>Copyediting, clarity improvement, consistency checks.</>,
+        description: <>Copyediting, clarity improvement, consistency checks, simplification of regulatory and technical complexity.</>,
         tags: [{ name: "Editing", icon: "check" }],
         images: [],
       },
       {
         title: "Multimedia",
-        description: <>Video scripting, short-form explainers, basic storyboarding.</>,
+        description: <>Video scripting, short-form explainers, basic storyboarding, writing for visual formats.</>,
         tags: [{ name: "Video", icon: "play" }],
         images: [],
       },
       {
         title: "Tools",
-        description: <>WordPress, Figma, Adobe Illustrator, Photoshop, After Effects (basic).</>,
+        description: <>WordPress, Figma, Obsidian, Adobe Illustrator, Photoshop, After Effects (basic).</>,
         tags: [{ name: "Tools", icon: "tool" }],
         images: [],
       },
